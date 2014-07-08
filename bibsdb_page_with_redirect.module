@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Bibsdb_page_with_redirect feature.
+ */
+
+include_once 'bibsdb_page_with_redirect.features.inc';
