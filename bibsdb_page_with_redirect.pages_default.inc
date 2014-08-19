@@ -17,7 +17,7 @@ function bibsdb_page_with_redirect_default_page_manager_handlers() {
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'http_response';
-  $handler->weight = -24;
+  $handler->weight = -25;
   $handler->conf = array(
     'title' => 'Bibsdb Page with redirect',
     'contexts' => array(),
