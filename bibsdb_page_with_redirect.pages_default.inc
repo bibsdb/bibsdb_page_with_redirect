@@ -23,14 +23,14 @@ function bibsdb_page_with_redirect_default_page_manager_handlers() {
     'contexts' => array(),
     'relationships' => array(),
     'code' => '301',
-    'destination' => '%node:field_bibsdb_redirect_url',
+    'destination' => '%node:field-bibsdb-redirect-link:url',
     'access' => array(
       'logic' => 'and',
       'plugins' => array(
         0 => array(
           'name' => 'php',
           'settings' => array(
-            'description' => 'Has value in redirect url field',
+            'description' => 'Has value in redirect link field',
             'php' => 'return !empty($contexts[\'argument_entity_id:node_1\']->data->field_bibsdb_redirect_link[\'und\'][0][\'url\']);
 ',
           ),
