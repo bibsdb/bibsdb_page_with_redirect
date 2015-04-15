@@ -31,7 +31,7 @@ function bibsdb_page_with_redirect_default_page_manager_handlers() {
           'name' => 'php',
           'settings' => array(
             'description' => 'Has value in redirect url field',
-            'php' => 'return !empty($contexts[\'argument_entity_id:node_1\']->data->field_bibsdb_redirect_url);
+            'php' => 'return !empty($contexts[\'argument_entity_id:node_1\']->data->field_bibsdb_redirect_link[\'und\'][0][\'url\']);
 ',
           ),
           'not' => FALSE,
