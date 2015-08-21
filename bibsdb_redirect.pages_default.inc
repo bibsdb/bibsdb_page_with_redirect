@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * bibsdb_page_with_redirect.pages_default.inc
+ * bibsdb_redirect.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_handlers().
  */
-function bibsdb_page_with_redirect_default_page_manager_handlers() {
+function bibsdb_redirect_default_page_manager_handlers() {
   $export = array();
 
   $handler = new stdClass();
@@ -23,15 +23,15 @@ function bibsdb_page_with_redirect_default_page_manager_handlers() {
     'contexts' => array(),
     'relationships' => array(),
     'code' => '301',
-    'destination' => '%node:field_bibsdb_redirect_url',
+    'destination' => '%node:field-bibsdb-redirect-link:url',
     'access' => array(
       'logic' => 'and',
       'plugins' => array(
         0 => array(
           'name' => 'php',
           'settings' => array(
-            'description' => 'Has value in redirect url field',
-            'php' => 'return !empty($contexts[\'argument_entity_id:node_1\']->data->field_bibsdb_redirect_url);
+            'description' => 'Has value in redirect link field',
+            'php' => 'return !empty($contexts[\'argument_entity_id:node_1\']->data->field_bibsdb_redirect_link[\'und\'][0][\'url\']);
 ',
           ),
           'not' => FALSE,
