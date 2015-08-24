@@ -14,5 +14,5 @@ features[field_base][] = field_bibsdb_redirect_link
 features[field_instance][] = node-ding_news-field_bibsdb_redirect_link
 features[field_instance][] = node-ding_page-field_bibsdb_redirect_link
 features[page_manager_handlers][] = node_view_http_response
-mtime = 1429102085
+mtime = 1440399577
 project path = sites/default/modules
